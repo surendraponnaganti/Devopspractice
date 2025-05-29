@@ -20,10 +20,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean install --batch-mode --errors --fail-at-end
+        run: mvn clean install
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: my-java-artifact
-          path: target/*.jar
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: my-java-artifact
+      #     path: target/*.jar
